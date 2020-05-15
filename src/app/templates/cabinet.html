@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ username }}'s cabinet</h1>
+    <p>What do you want to do?</p>
+    <form id="logout" method='GET' action="/logout">
+        <button type="submit">Log out</button>
+    </form>
+    <form id="changePwd" method='GET' action="/changepwd">
+        <button type="submit">Change your password</button>
+    </form>
+    <form id='viewgalery' method='GET' action='/viewgalery'>
+        <button type='submit'>View image galery</button>
+    </form>
+    <form id='toUploadPage' method='GET' action='/upload'>
+        <button type='submit'>Upload file</button>
+    </form>
+</body>
+</html>

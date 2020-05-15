@@ -1,0 +1,113 @@
+#header {
+    width: 100%;
+    padding: 30px;
+    border: 10px red;
+    margin: auto;
+    background-color: lightblue;
+    top: 0;
+    z-index: 2;
+    position: sticky;
+}
+#header p{
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+#gallery{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.box {
+    position: relative;
+    width:calc(96vw/4);
+    height:calc(96vw/4);
+    background-color: lightskyblue;
+    padding: auto;
+    margin: auto;
+    display: inline-block;
+    z-index:1;
+}
+
+.box *{
+    box-sizing:border-box;
+}
+
+.box .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+.box .hover_box{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    text-align:right;
+    outline: 1px solid white;
+    outline-offset:-10px;
+    z-index:-1;
+}
+.box .hover_text{
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:100px;
+    z-index:-1;
+}
+
+#big_modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index:3;
+}
+
+#modal{
+    display:block;
+    position:relative;
+    z-index:2;
+    left:20%;
+    top:15%;
+    width:60%;
+    height:60%;
+    text-align: center;
+    color: white;
+    font-size:50px;
+    border: 3px solid red;
+    background-color: rgba(150,150,150,0.5);
+}
+
+#dcmm{
+    width:100%;
+    height: 50%;
+}
+#modal_image{
+    float:left;
+    width:50%;
+    height:100%;
+    margin-left:5%;
+    margin-right:10%;
+}
+#modal_text{
+    float:right;
+    top:0;
+    width:20%;
+    height:100%;
+    color: white;
+    font-size:40px;
+    margin-right:5%;
+}

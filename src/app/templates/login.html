@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body>
+    <h1>Login form</h1>
+    <div class="container">
+        <form id="logIn" method="POST" action="/">
+            <br>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="pwd" required>
+            
+            <button type="submit" name="loginBtn">Login</button>
+            <p><b>
+                {{ message }}
+            </b></p>
+        </form>
+        <form id="register" method="GET" action="/register">
+            <br>
+            <label for="registerBtn">Don't have an account?</label>
+            <button type="submit" name="registerBtn">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>
